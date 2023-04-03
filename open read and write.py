@@ -1,0 +1,8 @@
+f=open("ecom_project.txt","w")
+print(f.name)
+print(f.mode)
+print(f.readable())
+print(f.writable())
+print(f.closed)
+f.close()
+print(f.closed)

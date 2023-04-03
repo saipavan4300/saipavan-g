@@ -1,24 +1,11 @@
-# user defined exceptions
-class TooYoungException(Exception):
-    def __init__(self,arg):
-        self.msg = arg
-      
-        
-class TooOldException(Exception):
-    def __init__(self,arg):
-        self.msg = arg
-        
-if __name__ == "__main__":
-    
-    age = int(input("Enter your age: "))
+from custommath import x,add,sub
+add(18,4)
+sub(18,4)
+print(x)
 
-    if age < 18:
-        raise TooYoungException()
-    elif age > 18:
-        raise TooOldException("You are old")
-    else:
-        print("You will get email")
-
-
-    
-        
+def add_fun(a,b):
+    """this function does addition of two numbers"""
+    print(a+b)
+add_fun(100,200)
+print(add_fun.__doc__)
+print(help(add_fun))
